@@ -14,6 +14,15 @@
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -298,7 +307,15 @@ h4 {
 }
 
 .operations__tab--1:hover {
-  background-color: var(--color-secondary-darker);
+  background-color: var(--color-secondary-opacity);
+}
+
+.operations__tab--2 {
+  background-color: var(--color-primary);
+}
+
+.operations__tab--2:hover {
+  background-color: var(--color-primary-opacity);
 }
 
 .operations__tab--3 {
@@ -307,7 +324,7 @@ h4 {
 }
 
 .operations__tab--3:hover {
-  background-color: var(--color-tertiary-darker);
+  background-color: var(--color-tertiary-opacity);
 }
 
 .operations__tab--active {
